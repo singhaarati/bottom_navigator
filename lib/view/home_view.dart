@@ -5,8 +5,14 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Home'),
+        backgroundColor: const Color.fromARGB(255, 224, 153, 197),
+        centerTitle: true,
+        elevation: 0,
+      ),
+      body: const SafeArea(
         child: Center(
           child: Text("Home"),
         ),

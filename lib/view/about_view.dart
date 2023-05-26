@@ -10,8 +10,14 @@ class AboutView extends StatefulWidget {
 class _AboutViewState extends State<AboutView> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('About Us'),
+        backgroundColor: const Color.fromARGB(255, 224, 153, 197),
+        centerTitle: true,
+        elevation: 0,
+      ),
+      body: const SafeArea(
         child: Center(
           child: Text("About Us"),
         ),
